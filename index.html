@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quetza - Tu nueva app financiera</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<svg viewBox="0 50 960 300">
+			<symbol id="s-text">
+			  <text text-anchor="middle" x="50%" y="80%">QUETZA</text>
+			</symbol>
+			<g class = "g-ants">
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+		  </svg>
+	</header>
+
+	<main>
+		<section>
+			<h2>Bienvenido a Quetza</h2>
+			<p>Con Quetza puedes llevar un control detallado de tus finanzas personales, manejar tus ingresos y gastos, y planificar tu futuro financiero.</p>
+		</section>
+
+		<section>
+			<h2>Características principales</h2>
+			<ul>
+				<li>Controla tus ingresos y gastos con facilidad</li>
+				<li>Obtén información detallada sobre tus transacciones</li>
+				<li>Planifica y realiza un seguimiento de tus metas financieras</li>
+				<li>Recibe notificaciones en tiempo real sobre tu actividad financiera</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Únete a Quetza hoy</h2>
+			<p>Con Quetza, puedes empezar a controlar tus finanzas de manera efectiva desde hoy mismo. Descarga ahora y empieza a tomar el control de tus finanzas personales.</p>
+			<button onclick="downloadFile()">Descargar ahora</button>
+			<script>
+			function downloadFile() {
+				// Crear un enlace temporal para descargar el archivo
+				var link = document.createElement("a");
+				link.href = "Quetza.apk";
+				link.download = "Quetza.apk";
+			  
+				// Hacer clic en el enlace para descargar el archivo
+				document.body.appendChild(link);
+				link.click();
+				document.body.removeChild(link);
+			  }</script> 
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2023 Quetza. Todos los derechos reservados.</p>
+	</footer>
+</body>
+</html>
+
