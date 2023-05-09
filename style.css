@@ -10,25 +10,22 @@ body{
   
   }
 
-  .slider-container {
+  .slider{
+    aspect-ratio: 8/16;
+    width: 500px;
+    position: relative;
     display: flex;
-    width: 50%;
-    height: 58vh;
-    overflow-x: scroll;
-  
-  
+    overflow: scroll;
     scroll-snap-type: x mandatory;
   }
-  
-  .slider-container img {
-    flex: 0 0 100%;
+  .slider img{
     width: 100%;
-    object-fit:cover;
-  
-
-    scroll-snap-align: center;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align:initial;
   }
-
 
   
   .container {
