@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Enviar Email</title>
+    <link rel="icon" href="iconos/icono.ico" type="icono">
+    <link rel="stylesheet" href="style_form.css">
+  </head>
+  <body>
+
+	<header>
+		<svg viewBox="0 50 960 300">
+			<symbol id="s-text">
+			  <text text-anchor="middle" x="50%" y="80%">CONTÁCTANOS</text>
+			</symbol>
+			<g class = "g-ants">
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+		  </svg>
+	</header>
+
+    <p>Por favor, envíenos un correo electrónico si tiene alguna pregunta o comentario.</p>
+    <form action="mailto:quetzaempres@gmail.com" method="post" enctype="text/plain">
+      Ingrese su nombre: 
+      <input type="text" name="nombre">
+      <br>
+      Ingrese su dirección: 
+      <input type="text" name="direccion">
+      <br>
+      Informe del problema:
+      <br>
+      <textarea rows="5" cols="40" name="problema"></textarea>
+      <br>
+      <input type="submit" value="enviar">
+    </form>
+      
+  </body>
+</html>
