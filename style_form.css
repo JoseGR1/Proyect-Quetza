@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(to bottom, #9efd80b2, #baf5ba96,  #ffffff );
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat);
+  .container {
+	display: flex;
+  /*   border:1px solid red; */
+	height: 100%;
+	align-items: i;
+  }
+  
+  svg {
+	  display: block;
+	  font: 7em 'Montserrat';
+	  width: 960px;
+	  height: 400px;
+	  margin: 0 auto;
+  }
+  
+  .text-copy {
+	  fill: none;
+	  stroke: rgb(0, 0, 0);
+	  stroke-dasharray: 6% 29%;
+	  stroke-width: 5px;
+	  stroke-dashoffset: 0%;
+	  animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+	  stroke: #64b9eb;
+	  animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(2){
+	  stroke: #2007ff;
+	  animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(3){
+	  stroke: #BD0034;
+	  animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(4){
+	  stroke: #06bd00;
+	  animation-delay: -5s;
+  }
+  
+  .text-copy:nth-child(5){
+	  stroke: #fffefe;
+	  animation-delay: -6s;
+  }
+  
+  @keyframes stroke-offset{
+	  100% {stroke-dashoffset: -35%;}
+  }
+  
+  header {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0);
+	
+  }
+
+
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+
+  }
+  
+  .button {
+    background-color: #c91313;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #2d2d2d;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #06bd00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c3ffc3;
+    color: #237a0d;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  

@@ -10,3 +10,8 @@ function downloadFile() {
     link.click();
     document.body.removeChild(link);
   }
+
+  function irAFormulario() {
+    window.location.href = "email_form.html";
+  }
+  

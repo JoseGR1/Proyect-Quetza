@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style_form.css">
+  </head>
+  <body>
+
+	<header>
+		<svg viewBox="0 50 960 300">
+			<symbol id="s-text">
+			  <text text-anchor="middle" x="50%" y="80%">CONTÁCTANOS</text>
+			</symbol>
+			<g class = "g-ants">
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+			  <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+		  </svg>
+	</header>
+
+    <p>Por favor, envíenos un correo electrónico si tiene alguna pregunta o comentario.</p>
+    <form action="mailto:quetzaempres@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="subject" required>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+      
+  </body>
+</html>

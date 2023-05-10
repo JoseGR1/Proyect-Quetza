@@ -4,11 +4,40 @@ body{
 	margin: 0;
 	padding: 0;
 	background: linear-gradient(to bottom, #9efd80b2, #baf5ba96,  #ffffff );
-	;
 	font-family: 'Segoe UI', sans-serif;
 	color: #000000;
   
   }
+  
+
+  .boton-flotante {
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	line-height: 70px;
+	bottom: 100px;
+	right: 23px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	background-color: #d82818;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+  }
+  
+  .boton-flotante:hover {
+	background-color: #C62828;
+
+  }
+  
+  .material-icons {
+	vertical-align: middle;
+  }
+  
+  
+
 
   .slider{
     aspect-ratio: 8/16;
