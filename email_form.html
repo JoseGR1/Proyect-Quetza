@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Enviar Email</title>
-    <link rel="icon" href="iconos/icono.ico" type="icono">
-    <link rel="stylesheet" href="style_form.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Enviar Email</title>
+  <link rel="icon" href="iconos/icono.ico" type="icono">
+  <link rel="stylesheet" href="style_form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos adicionales para el diseño responsivo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-	<header>
-		<svg viewBox="0 50 960 300">
-			<symbol id="s-text">
-			  <text text-anchor="middle" x="50%" y="80%">CONTÁCTANOS</text>
-			</symbol>
-			<g class = "g-ants">
-			  <use xlink:href="#s-text" class="text-copy"></use>
-			</g>
-		  </svg>
-	</header>
+    .contenedor {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <svg viewBox="0 50 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">CONTÁCTANOS</text>
+        </symbol>
+        <g class="g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+    </header>
 
     <p>Por favor, envíenos un correo electrónico si tiene alguna pregunta o comentario.</p>
     <form action="mailto:quetzaempres@gmail.com" method="post" enctype="text/plain">
-      Ingrese su nombre: 
-      <input type="text" name="nombre">
-      <br>
-      Ingrese su dirección: 
-      <input type="text" name="direccion">
-      <br>
-      Informe del problema:
-      <br>
-      <textarea rows="5" cols="40" name="problema"></textarea>
-      <br>
-      <input type="submit" value="enviar">
+      <label for="nombre">Ingrese su nombre:</label>
+      <input type="text" name="nombre" id="nombre" required>
+
+      <label for="direccion">Ingrese su dirección:</label>
+      <input type="text" name="direccion" id="direccion" required>
+
+      <label for="problema">Informe del problema:</label>
+      <textarea rows="5" cols="40" name="problema" id="problema" required></textarea>
+
+      <input type="submit" value="Enviar">
     </form>
-      
-  </body>
+  </div>
+</body>
 </html>
