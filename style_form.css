@@ -13,10 +13,10 @@ body {
   height: 100%;
   background: #ffffff96;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2px;
   border-radius: 10px;
 }
 
@@ -24,20 +24,60 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+	align-items: i;
 }
 
 svg {
   display: block;
-  font: 6em 'Montserrat';
+  font: 7em 'Montserrat';
   width: 100%;
   margin-bottom: 20px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: rgb(77, 77, 77);
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #64b9eb;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(2){
+  stroke: #2007ff;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #06bd00;
+  animation-delay: -5s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #080808;
+  animation-delay: -6s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  max-width: 400%;
+  max-width: 350%;
   background-color: #ffffff;
   border: none;
   padding: 10px;
