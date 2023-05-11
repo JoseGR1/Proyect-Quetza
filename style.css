@@ -137,6 +137,7 @@ body{
   
   p{
 	font-size:30px ;
+	text-align: justify;
   }
   h2 {
 	font-size: 30px;
@@ -161,8 +162,9 @@ body{
   }
   
   ul {
-	list-style: circle;
+	list-style:outside;
 	justify-content: center;
+	text-align: justify;
 	margin: 0;
 	padding: 0;
   }
