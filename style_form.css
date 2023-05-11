@@ -11,6 +11,20 @@ body {
 }
 
 .contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.contenedor {
   width: 85%;
   height: 100%;
   background: #bcffb6cc ; 
