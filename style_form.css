@@ -1,17 +1,19 @@
 /* Estilos CSS personalizados */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 body {
-  background:#bcffb696;
+  background:#bcffb670;
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .contenedor {
-  width: 100%;
+  width: 85%;
   height: 100%;
-  background: #ffffff96;
+  background: #bcffb6cc ; 
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -30,7 +32,7 @@ body {
 
 svg {
   display: block;
-  font: 7em 'Montserrat';
+  font: 7.5em 'Montserrat';
   width: 100%;
   margin-bottom: 20px;
 }
@@ -39,7 +41,7 @@ svg {
   fill: none;
   stroke: rgb(77, 77, 77);
   stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
+  stroke-width: 6px;
   stroke-dashoffset: 0%;
   animation: stroke-offset 5.5s infinite linear;
 }
@@ -47,6 +49,7 @@ svg {
 .text-copy:nth-child(1){
   stroke: #64b9eb;
   animation-delay: -2s;
+  
 }
 
 .text-copy:nth-child(2){
@@ -100,6 +103,10 @@ input[type="submit"] {
   letter-spacing: 1%;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #c3ffc3;
+  color: #237a0d;
 }
 
 label {
