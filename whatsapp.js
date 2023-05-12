@@ -2,7 +2,7 @@
   document.addEventListener("DOMContentLoaded", function() {
     var sendButton = document.getElementById("send-button");
     var messageInput = document.getElementById("message-input");
-    var phoneNumber = "50230847600"; // Reemplaza con el número de teléfono deseado
+    var phoneNumber = "50233567783"; // Reemplaza con el número de teléfono deseado
   
     sendButton.addEventListener("click", function() {
       var message = messageInput.value.trim();
