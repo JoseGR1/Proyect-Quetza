@@ -35,6 +35,29 @@ body{
   .material-icons {
 	vertical-align: middle;
   }
+
+  .boton-flotant-whatsapp {
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	line-height: 75px;
+	bottom: 20px;
+	right: 23px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	background-color: #06bd00;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+  }
+ .boton-flotant-whatsapp:hover {
+	background-color: #4baf2d;
+  }
+  .material-icons {
+	vertical-align: middle;
+  }
   
   
 
@@ -137,7 +160,7 @@ body{
   
   p{
 	font-size:30px ;
-	text-align: center;
+	text-align:center;
   }
   h2 {
 	font-size: 30px;

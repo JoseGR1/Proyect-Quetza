@@ -14,4 +14,6 @@ function downloadFile() {
   function irAFormulario() {
     window.location.href = "email_form.html";
   }
-  
+  function whatsapp() {
+    window.location.href = "whatsapp_chat.html";
+  }
